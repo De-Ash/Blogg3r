@@ -1,0 +1,9 @@
+<%- include ("partials/header")%>
+<h1><%= pageTitle %> </h1>
+<p><%= startingContent %></p>
+<% posts.forEach(newpost=> { %>
+    <hr>
+    <h2><%= newpost.title %> </h2>
+    <p><%= newpost.body %></p>
+<% })%>
+<%- include ("partials/footer")%>

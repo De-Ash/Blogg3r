@@ -1,0 +1,13 @@
+<%- include ("partials/header")%>
+<h1><%= pageTitle %> </h1>
+<h6 class="text-muted"><%= startingContent %></h6>
+<form action="/compose" method="post">
+    <label for="Title">Title</label>
+    <input type="text" name="newPostTitle" class="form-control form-control-sm mb-2 mt-1" autofocus autocomplete="off" placeholder="Post Title" id="Title">
+    <label for="post">Post</label>
+    <div class="input-group">
+    <textarea type="text" name="newPostBody" class="form-control" autocomplete="off" placeholder="Compose awesomeness here !" rows="2" id="post"></textarea>
+    <button type="submit" class="btn btn-outline-success">Publish</button>
+    </div>
+</form>
+<%- include ("partials/footer")%>
